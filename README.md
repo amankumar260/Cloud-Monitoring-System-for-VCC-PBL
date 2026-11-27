@@ -1,4 +1,4 @@
-# Cloud Deployment and Monitoring System — No Docker Version
+Cloud Deployment and Monitoring System — No Docker Version
 
 **Subject:** Virtualisation and Cloud Computing  
 **Stack:** Python, Flask, psutil, HTML/CSS/JavaScript  
@@ -12,7 +12,7 @@
 - Recent application events
 - Dashboard refreshes automatically every five seconds
 
-## Requirements
+Requirements
 - Python 3.10+ recommended
 - VS Code
 - Internet connection for the first installation of Python packages
@@ -37,7 +37,7 @@ If installation succeeds, open these URLs in your browser:
 
 Keep the terminal open while demonstrating the application. Press `Ctrl+C` to stop it.
 
-### macOS/Linux
+ macOS/Linux
 
 ```bash
 python3 -m venv .venv
@@ -46,8 +46,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 python app.py
 ```
-
-## Automated tests
+Automated tests
 
 After installing dependencies, open a second terminal in the project folder and run:
 
@@ -61,7 +60,7 @@ On Windows, if `python` is not available, use:
 .\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-## Troubleshooting
+Troubleshooting
 - **`py` not found:** Install Python from python.org and select the option to add Python to PATH, then reopen VS Code.
 - **Port 5000 is busy:** In PowerShell, run `$env:PORT="5001"; .\.venv\Scripts\python.exe app.py`, then open `http://127.0.0.1:5001`.
 - **Package install fails:** Check internet access and run the pip install command again.
